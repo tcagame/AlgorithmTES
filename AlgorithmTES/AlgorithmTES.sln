@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{536FD7D7-D725-43FE-8613-4F732B89BBCF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9988F729-32FB-43CA-9EDB-A2DEE000211B} = {9988F729-32FB-43CA-9EDB-A2DEE000211B}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgorithmTES", "AlgorithmTES\AlgorithmTES.vcxproj", "{9988F729-32FB-43CA-9EDB-A2DEE000211B}"
 EndProject

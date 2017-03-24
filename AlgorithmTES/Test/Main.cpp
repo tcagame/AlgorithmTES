@@ -1,7 +1,8 @@
+
 #include "DxLib.h"
 
-int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE, LPSTR, int) {
+void foo( );
 
-	DxLib_End( );
-	return 0;
+int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE, LPSTR, int) {
+	foo( );
 }
