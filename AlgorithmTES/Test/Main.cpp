@@ -16,9 +16,7 @@ void update( ) {
 	if ( isArrowLeft( ) ) {
 		sx--;
 	}
-	//draw( 100, 100 );
+
 	draw( sx, sy, 0, 0, 225, 225 );
-	//draw( 10, 10, 20, 20, 30, 30, 40, 40 );
-	
 }
 
