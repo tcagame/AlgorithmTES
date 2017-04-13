@@ -44,6 +44,7 @@ void load() {
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	ChangeWindowMode(TRUE);
 	SetGraphMode(1280, 700, 32);
+	SetMainWindowText( "AlgorithmTES 201704131131" );
 
 	if (DxLib_Init() == -1) {
 		return -1;
