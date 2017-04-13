@@ -7,15 +7,17 @@ void update();
 //
 // グローバル変数
 //
-int handle;
+int _handle = -1;
 
 //
 // パブリック関数
 //
 
 void draw(int sx, int sy, int tx, int ty, int tw, int th) {
-	// dxlibの描画関数を書く
-	DrawRectGraph( sx, sy, tx, ty, tw, th, handle, TRUE, FALSE );
+	if (_handle < 0) {
+		return;
+	}
+	DrawRectGraph( sx, sy, tx, ty, tw, th, _handle, TRUE, FALSE );
 }
 
 bool isArrowUp( ) {
@@ -38,12 +40,12 @@ bool isArrowLeft( ) {
 // プライベート関数
 //
 void load() {
-	handle = LoadGraph("resource.png");
+	_handle = LoadGraph("resource.png");
 }
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	ChangeWindowMode(TRUE);
-	SetGraphMode(1280, 700, 32);
+	SetGraphMode(1280, 720, 32);
 	SetMainWindowText( "AlgorithmTES 201704131131" );
 
 	if (DxLib_Init() == -1) {
